@@ -6,32 +6,26 @@ body{
 margin: 0 auto;
 max-width: 1400px;
 }
-.top{
-  margin: 0 auto;
-}
-.wrapper1{
-  padding-top: 30px;
-  margin: 0 auto;
-}
-.wrapper2{
-  margin: 0 auto;
-}
-.title{
+#awesome{
   margin: 0 auto;
   text-align: center;
 }
-.title-text{
+.title-dark{
+  margin: 0 auto;
   padding: 100px 0 25px 0;
   font-family: Raleway;
   font-size: 36px;
   color: #212121;
 }
-.hr1{
+.hr::after{
+  display: block;
+  content: "";
   margin: 0 auto;
   width: 64px;
   border: 1px solid #E72424;
 }
-.description span{
+.description{
+  padding-top: 30px;
   margin: 0 auto;
   text-align: center;
   font-family: Open Sans;
@@ -42,40 +36,16 @@ max-width: 1400px;
   max-width: 1200px;
   text-align: center;
   margin: 0 auto;
-}
-.grid {
   display: flex;
+  padding: 0 50px 0 50px;
 }
-.grid-item-catalog{
-  margin: 0 auto;
-}
-.bg1 {
-  margin: 0 auto;
-  width: 350px;
-  background-color: #fff;
-  padding-top: 55px;
-  padding-left: 40px;
-}
-.bg2 {
+.bg {
   margin: 0 auto;
   width: 350px;
   background-color: #fff;
   padding-top: 55px;
 }
-.bg3 {
-  width: 350px;
-  background-color: #fff;
-  padding-top: 55px;
-  padding-right: 40px;
-
-}
-.pre-thumb1{
-padding: 0 140px 20px 140px;
-}
-.pre-thumb2{
-  padding: 0 140px 20px 140px;
-}
-.pre-thumb3{
+.pre-thumb{
 padding: 0 140px 20px 140px;
 }
 .thumb1{
@@ -90,7 +60,6 @@ padding: 0 140px 20px 140px;
   height: 30px;
   padding: 20px 23px 20px 24px;
 }
-
 .thumb2{
   width: 70px;
   height: 70px;
@@ -101,11 +70,8 @@ padding: 0 140px 20px 140px;
 .thumb2 img {
   width: 37px;
   height: 26px; 
-  left: 157px;
-  top: 22px;
   padding: 22px 16px 22px 17px;
 }
-
 .thumb3{
   width: 70px;
   height: 70px;
@@ -116,18 +82,16 @@ padding: 0 140px 20px 140px;
 .thumb3 img {
   width: 21px;
   height: 33px; 
-  left: 157px;
-  top: 22px;
   padding: 19px 24px 18px 25px;
 }
-.grid-title{
+.flex-title{
   margin-bottom: 0;
   font-family: Open Sans;
   font-weight: 700;
   font-size: 20px;
   color: #333333;
 }
-.grid-desc{
+.flex-desc{
   font-family: Open Sans;
   font-size: 14px;
   color: #000000;
@@ -145,18 +109,20 @@ padding: 0 140px 20px 140px;
   color: #fff;
   box-shadow:0 0 0 222px rgba(0, 0, 0, 0.65) inset;
 }
-.third-text{
+.title-light{
   padding: 65px 0 45px 0;
   margin: 0 auto;
   font-family: Raleway;
   font-size: 36px;
 }
-.hr2{
+.separator::after{
+  display: block;
+  content: "";
   margin: 0 auto;
   width: 64px;
   border: 1px solid #FFFFFF;
 }
-.forth-text{
+.descr{
   margin: 0 auto;
   font-family: Raleway;
   font-weight: 300;
@@ -175,7 +141,14 @@ padding: 0 140px 20px 140px;
   padding: 11px 26px 11px 26px;
   font-family: Open Sans;
   font-weight: 600;
+  transition: 1.0s ease;
 }
+.btn:hover{
+  background-color: #fff;
+  color: #333333;
+  transition: 0.5s ease;
+}
+
 footer{
   background-color: #000000;
 }
